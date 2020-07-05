@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchcoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".main.faskes1">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_seach"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecamatan"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView3" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fasilitas Kesehatan"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView2" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_search"
+        android:id="@+id/layout_search"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_search_white_48dp"
+        app:layout_anchor="@id/app_bar_search"
+        app:layout_anchorGravity="bottom|end" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_my_location_white_48dp"
+        app:layout_anchor="@id/layout_search"
+        app:layout_anchorGravity="bottom|end" />
+
+
+</android.support.design.widget.CoordinatorLayout>

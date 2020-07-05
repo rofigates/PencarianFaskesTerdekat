@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_faskes1"
+            android:icon="@drawable/ic_airport_shuttle_black_24dp"
+            android:title="Faskes Tingkat 1" />
+        <item
+            android:id="@+id/nav_faskes2"
+            android:icon="@drawable/ic_local_pharmacy_black_24dp"
+            android:title="Faskes Tingkat 2" />
+        <item
+            android:id="@+id/nav_faskes3"
+            android:icon="@drawable/ic_local_hotel_black_24dp"
+            android:title="Faskes Tingkat 3" />
+        <item
+            android:id="@+id/nav_lokasi"
+            android:icon="@drawable/maptok"
+            android:title="Lokasi" />
+        <item
+            android:id="@+id/nav_Pencarian"
+            android:icon="@drawable/ic_zoom_in_black_24dp"
+            android:title="Pencarian" />
+    </group>
+
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_informasi"
+                android:icon="@drawable/ic_perm_device_information_black_24dp"
+                android:title="Informasi" />
+        </menu>
+    </item>
+
+</menu>
